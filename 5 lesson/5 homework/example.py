@@ -1,31 +1,36 @@
 
 
 class Calculator:
-    def __init__(self) -> None:
-        pass
+    def __init__(self, a=0, b=0) -> None:
+        self.a = a
+        self.b = b
 
-    def add(self, a, b) -> None:
-        pass
+    def add(self, a, b):
+        c = a + b
+        return c
 
 
 class IntegerCalculator(Calculator):
-    def __init__(self):
+    def __init__(self, a=0, b=0):
+        self.a = a
+        self.b = b
         super().__init__()
 
 
-    def add(self, a, b) -> int:
-        c = int(a) + int(b)
-        return c
+
+    # def add(self, a, b) -> int:
+    #     c = int(a) + int(b)
+    #     return c
 
 
 class FloatCalculator(Calculator):
-    def __init__(self):
-        super().__init__()
+    def super__init__(self) -> None:
+        pass
 
 
-    def add(self, a, b) -> float:
-        c = float(a) + float(b)
-        return c
+    # def add(self, a, b) -> float:
+    #     c = float(a) + float(b)
+    #     return c
 
 
 def make_add(obj, a, b):

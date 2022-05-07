@@ -1,31 +1,26 @@
-def su():
-    return a + b
-
-
-def mu():
-    return a * b
-
-# su and mu - additional functions, which returns input parameters to experimental function
-
-list = [1,2,3,4,6,8]
-a = 3
-b = 4
+def sqr(a):  # additional function
+    return a ** 2
 
 
 def my_map(func, l):
-    '''
-	 my_map - Experimental function-generator that works as function map()
-            This function sums first input argument (func) with next element in list by new iteration
-	 func - result or return of additional function (mu-ltiply or su-mming) 
-	 l - list of integers
-	'''
+    """
+my_map - Experimental function-generator that works as function map()
+This function takes iterable element and send it to additional function(func) as input argument, and yielding result.
+func - additional function
+l - list of integers
+    """
+    for item in l:
+        yield func(item)
 
-    c = func()
-    for item in l:    
-        yield item + c
 
-g = my_map(mu, list)  # Generator object 
+l = [1, 2, 3, 4, 6, 8]  # list of elements
 
-for i in list:
-    print(next(g))
+c = my_map(sqr, l)
 
+print(next(c))
+print(next(c))
+print(next(c))
+print(next(c))
+
+# for i in my_map(sqr, l):
+#   print(i)
