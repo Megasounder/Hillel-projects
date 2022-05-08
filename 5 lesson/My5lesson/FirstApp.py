@@ -15,7 +15,9 @@
 # def page123():
 #     return render_template('page123.html')
 # if __name__=='__main__':
-#     app.run(debug=True)
+
+
+
 #  Написати стайт який буде показувати контент файлу
 # (файл будь який самі придумайте, головне шоб в ньому було багато лійній)
 # і матиме три роути:
@@ -37,7 +39,7 @@
 #
 # Файл відкривайте і зчитуйте контент файлу в функції яка обробляє роут
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask('MySite')
 
@@ -53,14 +55,27 @@ def about():
     return '<H1> Yeeeeesss</H1>'
 
 
-@app.route('/about/')
+@app.route('/list.html')
 def about_folder():
-    return '<H1> FOOOLDER</H1>'
+    title = 'LIST OF FRUITS'
+    items = [i for i in open('fruits.txt')]
+    return render_template('temp_list.html', items=items, title=title)
 
 
-@app.route('/hi/<int:name>')
-def user_name(name):
-    return f'<H1>Hello {name} </H1>'
+
+@app.route('/filter/<str:word>')
+def find_fruit(word):
+    title = word
+    items = []
+
+    file = open("fruits.txt")
+    read = file.read()
+    fruit = word
+    if fruit in read:
+        items = word
+    else:
+        items = 'not found or type error'
+    return render_template('temp_list.html', items=items, title=title)
 
 
 @app.route('/hi/<int:name>/')
