@@ -1,0 +1,33 @@
+<scheme name="Darcula" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2022-05-08T19:08:52</property>
+    <property name="ide">PyCharmCore</property>
+    <property name="ideVersion">2022.1.0.0</property>
+    <property name="modified">2022-05-08T19:09:27</property>
+    <property name="originalScheme">_@user_Darcula</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
+  <font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="16" />
+  </font>
+  <font>
+    <option name="EDITOR_FONT_NAME" value="Consolas" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
+  </font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="Consolas" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
+  </console-font>
+  <option name="CONSOLE_LINE_SPACING" value="1.05" />
+  <colors>
+    <option name="CONSOLE_BACKGROUND_KEY" value="1f1f1f" />
+    <option name="IMAGES_BACKGROUND" value="" />
+    <option name="IMAGES_GRID_LINE_COLOR" value="e7e7e7" />
+  </colors>
+</scheme>
