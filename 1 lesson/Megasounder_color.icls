@@ -1,16 +1,16 @@
 <scheme name="Darcula Darker" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="created">2022-05-08T22:35:49</property>
+    <property name="created">2022-05-10T19:13:47</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2022.1.0.0</property>
-    <property name="modified">2022-05-08T22:36:28</property>
-    <property name="originalScheme">_@user_Darcula Darker</property>
+    <property name="modified">2022-05-10T19:14:20</property>
+    <property name="originalScheme">Darcula Darker</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <font>
     <option name="EDITOR_FONT_NAME" value="Droid Sans Mono" />
-    <option name="EDITOR_FONT_SIZE" value="17" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
   </font>
   <font>
     <option name="EDITOR_FONT_NAME" value="Consolas" />
@@ -18,7 +18,7 @@
   </font>
   <colors>
     <option name="CARET_COLOR" value="f7f7f7" />
-    <option name="CARET_ROW_COLOR" value="323335" />
+    <option name="CARET_ROW_COLOR" value="213642" />
     <option name="CONSOLE_BACKGROUND_KEY" value="" />
     <option name="FILESTATUS_ADDED" value="c3e887" />
     <option name="FILESTATUS_COPIED" value="a7700" />
@@ -41,11 +41,13 @@
     <option name="FILESTATUS_addedOutside" value="eaa00" />
     <option name="FILESTATUS_changelistConflict" value="ff0000" />
     <option name="FILESTATUS_modifiedOutside" value="47e4" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="c1c4c4" />
     <option name="GUTTER_BACKGROUND" value="262626" />
     <option name="IMAGES_BACKGROUND" value="b13fa8" />
-    <option name="NOTIFICATION_BACKGROUND" value="263239" />
+    <option name="NOTIFICATION_BACKGROUND" value="3a6276" />
     <option name="SELECTED_TEARLINE_COLOR" value="5e6063" />
-    <option name="SELECTION_BACKGROUND" value="2b2d3d" />
+    <option name="SELECTION_BACKGROUND" value="39505c" />
+    <option name="SEPARATOR_BELOW_COLOR" value="" />
     <option name="TEARLINE_COLOR" value="454749" />
   </colors>
   <attributes>
@@ -74,6 +76,12 @@
     <option name="DEFAULT_STRING">
       <value>
         <option name="FOREGROUND" value="8ea765" />
+      </value>
+    </option>
+    <option name="FOLDED_TEXT_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="bbbbbb" />
+        <option name="BACKGROUND" value="3a3a3a" />
       </value>
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
