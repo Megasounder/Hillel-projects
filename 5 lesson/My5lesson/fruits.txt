@@ -1,132 +1,143 @@
-Abiu
-Açaí
-Acerola
-Ackee
-African Cherry Orange
-American Mayapple
-Apple
-Apricot
-Araza
-Avocado
-Banana
-Bilberry
-Blackberry
-Blackcurrant
-Black sapote
-Blueberry
-Boysenberry
-Breadfruit
-Buddha's hand (fingered citron)
-Cactus pear
-Canistel
-Cashew
-Cempedak
-Cherimoya (Custard Apple)
-Cherry
-Chico fruit
-Cloudberry
-Coco De Mer
-Coconut
-Crab apple
-Cranberry
-Currant
-Damson
-Date
-Dragonfruit (or Pitaya)
-Durian
-Egg Fruit
-Elderberry
-Feijoa
-Fig
-Finger Lime (or Caviar Lime)
-Goji berry
-Gooseberry
-Grape
-Raisin
-Grapefruit
-Grewia asiatica (phalsa or falsa)
-Guava
-Hala Fruit
-Honeyberry
-Huckleberry
-Jabuticaba (Plinia)
-Jackfruit
-Jambul
-Japanese plum
-Jostaberry
-Jujube
-Juniper berry
-Kaffir Lime
-Kiwano (horned melon)
-Kiwifruit
-Kumquat
-Lemon
-Lime
-Loganberry
-Longan
-Loquat
-Lulo
-Lychee
-Magellan Barberry
-Mamey Apple
-Mamey Sapote
-Mango
-Mangosteen
-Marionberry
-Melon
-Cantaloupe
-Galia melon
-Honeydew
-Mouse melon
-Musk melon
-Watermelon
-Miracle fruit
-Momordica fruit
-Monstera deliciosa
-Mulberry
-Nance
-Nectarine
-Orange
-Blood orange
-Clementine
-Mandarine
-Tangerine
-Papaya
-Passionfruit
-Pawpaw
-Peach
-Pear
-Persimmon
-Plantain
-Plum
-Prune (dried plum)
-Pineapple
-Pineberry
-Plumcot (or Pluot)
-Pomegranate
-Pomelo
-Purple mangosteen
-Quince
-Raspberry
-Salmonberry
-Rambutan (or Mamin Chino)
-Redcurrant
-Rose apple
-Salal berry
-Salak
-Satsuma
-Shine Muscat or Vitis Vinifera
-Sloe or Hawthorn Berry
-Soursop
-Star apple
-Star fruit
-Strawberry
-Surinam cherry
-Tamarillo
-Tamarind
-Tangelo
-Tayberry
-Ugli fruit
-White currant
-White sapote
-Yuzu
+abiu
+acerola
+ackee
+african cherry orange
+american mayapple
+apple
+apricot
+araza
+avocado
+banana
+bilberry
+black sapote
+blackberry
+blackcurrant
+blood orange
+blueberry
+boysenberry
+breadfruit
+buddha's hand
+cactus pear
+canistel
+cantaloupe
+cashew
+caviar lime
+cempedak
+cherimoya
+cherry
+chico fruit
+clementine
+cloudberry
+coco de mer
+coconut
+crab apple
+cranberry
+currant
+custard apple
+damson
+date
+dragonfruit
+dried plum
+durian
+egg fruit
+elderberry
+falsa
+feijoa
+fig
+finger lime
+fingered citron
+galia melon
+goji berry
+gooseberry
+grape
+grapefruit
+grewia asiatica
+guava
+hala fruit
+honeyberry
+honeydew
+horned melon
+huckleberry
+jabuticaba
+jackfruit
+jambul
+japanese plum
+jostaberry
+jujube
+juniper berry
+kaffir lime
+kiwano
+kiwifruit
+kumquat
+lemon
+lime
+loganberry
+longan
+loquat
+lulo
+lychee
+magellan barberry
+mamey apple
+mamey sapote
+mamin chino
+mandarine
+mango
+mangosteen
+marionberry
+melon
+miracle fruit
+momordica fruit
+monstera deliciosa
+mouse melon
+mulberry
+musk melon
+nance
+nectarine
+orange
+papaya
+passionfruit
+pawpaw
+peach
+pear
+persimmon
+phalsa
+pineapple
+pineberry
+pitaya
+plantain
+plinia
+plum
+plumcot
+pluot
+pomegranate
+pomelo
+prune
+purple mangosteen
+quince
+raisin
+rambutan
+raspberry
+redcurrant
+rose apple
+salak
+salal berry
+salmonberry
+satsuma
+shine muscat
+sloe or hawthorn berry
+soursop
+star apple
+star fruit
+strawberry
+surinam cherry
+tamarillo
+tamarind
+tangelo
+tangerine
+tayberry
+ugli fruit
+vitis vinifera
+watermelon
+white currant
+white sapote
+yuzu
