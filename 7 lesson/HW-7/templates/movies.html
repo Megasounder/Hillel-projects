@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Movies:
+{% for index, movie in enumerate(movies, start=1) %}
+    <ul>
+        Movie: {{ index }}
+        <li>Name {{ movie['name'] }} </li>
+        <li>IMDB: {{ movie['rating'] }}/10 </li>
+        <li>Directed by {{ movie['director'] }} </li>
+    </ul>
+{%  endfor %}
+</body>
+</html>
