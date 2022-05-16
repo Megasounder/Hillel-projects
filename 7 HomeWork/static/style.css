@@ -1,0 +1,29 @@
+nav {width: auto;
+    margin:0 auto;}
+nav:before {
+    content:'';
+    display:block;
+    height: 100px;
+    width:100%;
+    background: rgb(77, 40, 137);
+    position:absolute;
+    left:0;
+    z-index:-1}
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:100px;
+    }
+ul li {
+    float:left;}
+ul li a {
+    color: rgb(255, 254, 254);
+    display:block;
+    height:auto;
+    font-family: Arial;
+    padding:0 40px;
+    line-height:50px;}
+ul li a:hover {
+    background: #ed29fd
+}

@@ -3,11 +3,13 @@ from flask import Flask, render_template
 app = Flask('Fruits')
 app.url_map.strict_slashes = False
 
+
 @app.route('/')
 def welcome():
     title = 'FRUITS'
     items = ['Type /list, /filter/smtn, /show/num']
     return render_template('template.html', items=items, title=title)
+
 
 @app.route('/list')
 def list_of_fruits():
