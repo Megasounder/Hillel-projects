@@ -14,29 +14,56 @@
 #
 #
 #
-
+import sqlite3
+from typing import List
 from flask import Flask, render_template
+import sqlalchemy
 
 
 app = Flask(__name__)
 
 
-#
-# def get_movies() -> List[Dict[str, str]]:
-#     with sqlite3.connect('movies.sqlite') as db_connection:
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///goods.db'
+
+db = sqlalchemy(app)
+
+
+
+# def get_goods() -> List:
+#     with sqlite3.connect('goods.sqlite') as db_connection:
 #         db_connection.row_factory = sqlite3.Row
 #         cursor = db_connection.cursor()
-#         movies_cursor = cursor.execute("""
-#             SELECT name, rating, director FROM movies
+#         goods_cursor = cursor.execute("""
+#             SELECT title, amount, price, category, buyer FROM goods
 #         """)
-#         movies = []
-#         for item in movies_cursor:
-#             movies.append(dict(item))
-#         return movies
+#         goods = []
+#         for item in goods_cursor:
+#             goods.append(dict(item))
+#         return goods
 #
 @app.route('/')
 def welcome_page():
     return render_template('welcome.html')
+
+
+@app.route('/init_form.html')
+def init_page():
+    return render_template('init_form.html')
+
+
+@app.route('/all_items.html')
+def show_all():
+    return render_template('all_items.html')
+
+
+@app.route('/category.html')
+def filter_category():
+    return render_template('category.html')
+
+
+@app.route('/buyer.html')
+def filter_buyer():
+    return render_template('buyer.html')
 
 
 if __name__ == '__main__':
