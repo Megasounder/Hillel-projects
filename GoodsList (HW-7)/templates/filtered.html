@@ -1,0 +1,33 @@
+{% extends'welcome.html' %}
+
+{% block title %}
+<title>result</title>
+{% endblock %}
+
+{% block body %}
+    <form>
+{% for item in items: %}
+    {% if item.category == target %}
+        <h1>{{ item.title }}</h1>
+        <a>Amount - {{ item.amount }}</a><br>
+        <a>Price - {{ item.price}}</a><br>
+        <a>Category - {{ item.category}}</a><br>
+        <a>Buyer - {{ item.buyer}}</a><br>
+
+    {% endif %}
+
+{% endfor %}
+
+{% for item in items: %}
+    {% if item.buyer == target %}
+        <h1>{{ item.title }}</h1>
+        <a>Amount - {{ item.amount }}</a><br>
+        <a>Price - {{ item.price}}</a><br>
+        <a>Category - {{ item.category}}</a><br>
+        <a>Buyer - {{ item.buyer}}</a><br>
+
+    {% endif %}
+
+{% endfor %}
+    </form>
+{% endblock %}

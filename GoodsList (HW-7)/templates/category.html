@@ -1,0 +1,17 @@
+{% extends'welcome.html' %}
+
+{% block title %}
+<title>
+    :category
+</title>
+{% endblock %}
+
+{% block body %}
+<h1>Categories:</h1>
+<form>
+ {% for item in items: %}
+    <a href="{{item.category}}"><h3>{{ item.category}}</h3></a><br>
+{% endfor %}
+
+</form>
+{% endblock %}

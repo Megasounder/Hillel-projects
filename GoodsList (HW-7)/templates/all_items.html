@@ -1,0 +1,20 @@
+{% extends'welcome.html' %}
+
+{% block title %}
+<title>
+    :all goods
+</title>
+{% endblock %}
+
+{% block body %}
+<form>
+ {% for item in items: %}
+    <h1>{{ item.title }}</h1>
+    <a>Amount - {{ item.amount }}</a><br>
+    <a>Price - {{ item.price}}</a><br>
+    <a>Category - {{ item.category}}</a><br>
+    <a>Buyer - {{ item.buyer}}</a><br>
+{% endfor %}
+
+</form>
+{% endblock %}

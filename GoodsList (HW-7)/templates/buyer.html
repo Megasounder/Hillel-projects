@@ -1,0 +1,17 @@
+{% extends'welcome.html' %}
+
+{% block title %}
+<title>
+    :buyer
+</title>
+{% endblock %}
+
+{% block body %}
+<h1>Customers:</h1>
+<form>
+ {% for item in items: %}
+    <a href="{{item.buyer}}"><h3>{{item.buyer}}</h3></a><br>
+{% endfor %}
+
+</form>
+{% endblock %}

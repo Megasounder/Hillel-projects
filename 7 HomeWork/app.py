@@ -16,8 +16,11 @@
 #
 import sqlite3
 from typing import List
-from flask import Flask, render_template
-import sqlalchemy
+from flask import Flask, render_template, request, flash, url_for
+from flask_sqlalchemy import SQLAlchemy
+from wtforms import Form, StringField, IntegerField, FloatField
+from werkzeug.utils import redirect
+
 
 
 app = Flask(__name__)
@@ -25,9 +28,25 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///goods.db'
 
-db = sqlalchemy(app)
+db = SQLAlchemy(app)
 
 
+class InputForm(Form):
+    title = StringField('Title')
+    amount = IntegerField('Amount')
+    price = FloatField('Price')
+    category = StringField('Category')
+    buyer = StringField('Buyer')
+
+class Goods(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(40), nullable=False)
+    amount = db.Column(db.Float, nullable=True)
+    price = db.Column(db.Float, nullable=True)
+    category = db.Column(db.String(40))
+    buyer = db.Column(db.String(20), nullable=True)
+
+db.create_all()
 
 # def get_goods() -> List:
 #     with sqlite3.connect('goods.sqlite') as db_connection:
@@ -41,14 +60,23 @@ db = sqlalchemy(app)
 #             goods.append(dict(item))
 #         return goods
 #
+
 @app.route('/')
 def welcome_page():
     return render_template('welcome.html')
 
 
-@app.route('/init_form.html')
+
+
+@app.route('/init_form.html', methods=['POST', 'GET'])
 def init_page():
-    return render_template('init_form.html')
+    form = InputForm(request.form)
+    if request.method == 'POST' and form.validate():
+        item = Goods(form.title.data, form.amount.data, form.price.data, form.category.data, form.buyer.data)
+        db_session.add(item)
+        flash('well done')
+        return redirect(url_for('/all_items.html'))
+    return render_template('init_form.html', form=form)
 
 
 @app.route('/all_items.html')
@@ -64,6 +92,8 @@ def filter_category():
 @app.route('/buyer.html')
 def filter_buyer():
     return render_template('buyer.html')
+
+
 
 
 if __name__ == '__main__':

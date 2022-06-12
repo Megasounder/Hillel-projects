@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css"/>
+    <link rel = "icon" href ="/static/clean.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    {% block title  %}
+    {% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="input_form.html"><h2>:input item</h2></a></li>
+            <li><a href="all_items.html"><h2>:show all items</h2></a></li>
+            <li><a href="category.html"><h2>:by category</h2></a></li>
+            <li><a href="buyer.html"><h2>:by customer</h2></a></li>
+        </ul>
+    </nav>
+{% block body %}
+    <h1> Welcome to simple "List of Goods" program </h1>
+    <h4>chose category in header</h4>
+{% endblock %}
+
+</body>
+</html>
