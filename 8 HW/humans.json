@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Nick",
+    "gender": "male",
+    "age": "30",
+    "country": "England"
+  },
+  {
+    "name": "Eva",
+    "gender": "female",
+    "age": "25",
+    "country": "Spain"
+  },
+  {
+    "name": "Max",
+    "gender": "male",
+    "age": "28",
+    "country": "Italy"
+  },
+  {
+    "name": "Mike",
+    "gender": "male",
+    "age": "26",
+    "country": "France"
+  }
+]
